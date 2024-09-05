@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>He Yuzhou's Resume</title>
+    <link rel="icon" href="avatar.jpg" type="image/jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-size: 16px; /* 设置基本字体大小 */
+        }
+        .header {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative; /* 添加相对定位 */
+}
+
+.header::before {
+    content: '';
+    position: absolute; /* 绝对定位 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
+    z-index: 1; /* 确保背景在文字后面 */
+}
+
+.avatar {
+    width: 150px; /* 头像宽度 */
+    height: auto; /* 高度自动调整 */
+    border-radius: 50%; /* 圆形效果 */
+    border: 3px solid white; /* 白色边框 */
+    margin-bottom: 20px; /* 下边距 */
+    position: relative; /* 头像相对定位 */
+    z-index: 2; /* 确保头像在背景上面 */
+}
+
+.header h1 {
+    font-size: 3em; /* 放大 "He Yuzhou" 的字体大小 */
+    position: relative; /* 文字相对定位 */
+    z-index: 2; /* 确保标题在背景上面 */
+    color: #003366; /* 设置名字的颜色为深蓝色 */
+    text-shadow: 
+        -1px -1px 0 #ffffff,  
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff; /* 白色边框效果 */
+}
+
+.header h2 {
+    font-size: 1.5em; /* 副标题大小 */
+    position: relative; /* 文字相对定位 */
+    z-index: 2; /* 确保副标题在背景上面 */
+    color: #003366; /* 设置职位的颜色为深蓝色 */
+}
+
+.header p {
+    position: relative; /* 文字相对定位 */
+    z-index: 2; /* 确保段落文字在背景上面 */
+    color: #003366; /* 设置地址和邮箱的颜色为深蓝色 */
+    font-weight: bold; /* 地址、邮箱、联系方式加粗 */
+}
+
+.header a {
+    color: #003366; /* 设置邮箱链接的颜色为深蓝色 */
+    text-decoration: none; /* 去掉下划线 */
+    font-weight: bold; /* 邮箱链接加粗 */
+}
+
+.header a:hover {
+    text-decoration: underline; /* 鼠标悬停时添加下划线 */
+}
+
+        main {
+            background-color: white; /* 主体内容背景色 */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px; /* 上下左右外边距 */
+        }
+        h2, h3 {
+            color: #003366; /* 设置小标题颜色为深蓝色 */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em; /* 页脚字体稍小 */
+            color: #777; /* 页脚文字颜色 */
+        }
+        @media (max-width: 600px) {
+            .header {
+                padding: 20px; /* 减少内边距 */
+            }
+            .avatar {
+                width: 100px; /* 减小头像宽度 */
+            }
+        }
+        @media print {
+            header, footer {
+                display: none; /* 隐藏页眉和页脚 */
+            }
+            main {
+                margin: 0; /* 移除外边距 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="avatar.jpg" alt="头像：He Yuzhou" class="avatar">
+    <h1>He Yuzhou</h1>
+    <h2>PhD Candidate</h2>
+    <p>135 Yaguan Road, Jin Nan Region, China, 300354</p>
+    <p>Phone: (+86) 15208233620 | Email: <a href="mailto:ribosomehyz@gmail.com">ribosomehyz@gmail.com</a></p>
+    <p>Github:<a href="https://github.com/wiliiiii"target="_blank">wiliiiii</a> | Instagram: <a href="https://www.instagram.com/sakana2350418/"target="_blank">sakana2350418</a></p>
+</div>
+
+<main>
+    <h2>Education</h2>
+    <h3>Tianjin University, Tianjin, China</h3>
+    <p>B.S. in Mathematics and Applied Mathematics (Aug. 2022 - Jun. 2026)</p>
+    <ul>
+        <li>Weighted Average: 92.18, GPA: 3.81/4, Ranking: 1/28</li>
+        <li>All mathematics specialized courses have full grade points (90+/100)</li>
+        <li>Key Modules: Mathematical Analysis, Geometry and Topology, Probability and Statistics, Real Analysis</li>
+    </ul>
+
+    <h3>Sichuan University, Sichuan, China</h3>
+    <p>Summer Research Student (July 1st 2024 - July 20th 2024)</p>
+    <ul>
+        <li>Participated in the 14th National Mathematics Top Students Joint Summer School.</li>
+        <li>Key Modules: Integrable System, Equivalent de Rham Theory, Algebraic Geometry</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>Programming: Python, LaTeX, Matlab, C++</li>
+        <li>Languages: Chinese (Native)</li>
+        <li>Soft Skills: Problem-solving, Teamwork, Communication, Leadership</li>
+    </ul>
+
+    <h2>Honors & Awards</h2>
+    <h3>International</h3>
+    <ul>
+        <li>2024: Nitori International Scholarship, supporting international students pursuing higher education in Japan.</li>
+        <li>2024: Honorable Mention, Mathematical Contest in Modeling.</li>
+    </ul>
+    
+    <h3>Domestic</h3>
+    <ul>
+        <li>2023: Outstanding Winner, School Mathematics Contest.</li>
+        <li>2024: Second Prize, The Chinese Mathematics Competitions.</li>
+    </ul>
+
+    <h2>Experience</h2>
+    <h3>Tianjin University</h3>
+    <ul>
+        <li><strong>Teaching Assistant</strong> (Sep. 2024 - Jan. 2025)</li>
+        <li>Graded homework and provided academic tutoring.</li>
+    </ul>
+    
+    <h3>Tianjin University Mathematics Guide Website</h3>
+    <ul>
+        <li><strong>Website Developer</strong> (Jun. 2023 - Present)</li>
+        <li>Responsible for Number Theory and Mathematical Analysis.</li>
+        <li>Achieved 49,000 event counts and 11,000 views, serving over 100 undergraduate students annually.</li>
+    </ul>
+
+    <h3>Tianjin University Student Union</h3>
+    <ul>
+        <li><strong>Member</strong> (Sep. 2022 - Jun. 2023)</li>
+        <li>Participated in festival performances and was responsible for writing drama scripts.</li>
+    </ul>
+
+    <h2>Outstanding Courses</h2>
+    <ul>
+        <li>100: Mathematical Analysis 2, 2022-2023 Spring</li>
+        <li>100: Mathematical Analysis 3, 2023-2024 Autumn</li>
+        <li>100: College Physics 2, 2023-2024 Autumn</li>
+        <li>100: Theory of Probability, 2023-2024 Autumn</li>
+        <li>100: Selected Explanation of Mathematical Methods, 2022-2023 Spring</li>
+        <li>99: Topology, 2023-2024 Spring</li>
+        <li>98: Topics on Number Theory, 2023-2024 Spring</li>
+        <li>96: Mathematical Statistics, 2023-2024 Spring</li>
+        <li>95: Complex Function, 2023-2024 Spring</li>
+        <li>95: Advanced Algebra, 2022-2023 Autumn</li>
+    </ul>
+
+    <h2>Self-study</h2>
+    <p>A Basic Course in Algebraic Topology by William S. Massey. Published a column on Zhihu, a Q&A site and news aggregator.</p>
+</main>
+
+<footer>
+    <p>&copy; 2024 He Yuzhou. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
