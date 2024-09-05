@@ -14,71 +14,72 @@
             color: #333;
             font-size: 16px; /* 设置基本字体大小 */
         }
+
         .header {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 40px 20px;
-    text-align: center;
-    position: relative; /* 添加相对定位 */
-}
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative; /* 添加相对定位 */
+        }
 
-.header::before {
-    content: '';
-    position: absolute; /* 绝对定位 */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
-    z-index: 1; /* 确保背景在文字后面 */
-}
+        .header::before {
+            content: '';
+            position: absolute; /* 绝对定位 */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
+            z-index: 1; /* 确保背景在文字后面 */
+        }
 
-.avatar {
-    width: 150px; /* 头像宽度 */
-    height: auto; /* 高度自动调整 */
-    border-radius: 50%; /* 圆形效果 */
-    border: 3px solid white; /* 白色边框 */
-    margin-bottom: 20px; /* 下边距 */
-    position: relative; /* 头像相对定位 */
-    z-index: 2; /* 确保头像在背景上面 */
-}
+        .avatar {
+            width: 150px; /* 头像宽度 */
+            height: auto; /* 高度自动调整 */
+            border-radius: 50%; /* 圆形效果 */
+            border: 3px solid white; /* 白色边框 */
+            margin-bottom: 20px; /* 下边距 */
+            position: relative; /* 头像相对定位 */
+            z-index: 2; /* 确保头像在背景上面 */
+        }
 
-.header h1 {
-    font-size: 3em; /* 放大 "He Yuzhou" 的字体大小 */
-    position: relative; /* 文字相对定位 */
-    z-index: 2; /* 确保标题在背景上面 */
-    color: #003366; /* 设置名字的颜色为深蓝色 */
-    text-shadow: 
-        -1px -1px 0 #ffffff,  
-        1px -1px 0 #ffffff,
-        -1px 1px 0 #ffffff,
-        1px 1px 0 #ffffff; /* 白色边框效果 */
-}
+        .header h1 {
+            font-size: 3em; /* 放大 "He Yuzhou" 的字体大小 */
+            position: relative; /* 文字相对定位 */
+            z-index: 2; /* 确保标题在背景上面 */
+            color: #003366; /* 设置名字的颜色为深蓝色 */
+            text-shadow: 
+                -1px -1px 0 #ffffff,  
+                1px -1px 0 #ffffff,
+                -1px 1px 0 #ffffff,
+                1px 1px 0 #ffffff; /* 白色边框效果 */
+        }
 
-.header h2 {
-    font-size: 1.5em; /* 副标题大小 */
-    position: relative; /* 文字相对定位 */
-    z-index: 2; /* 确保副标题在背景上面 */
-    color: #003366; /* 设置职位的颜色为深蓝色 */
-}
+        .header h2 {
+            font-size: 1.5em; /* 副标题大小 */
+            position: relative; /* 文字相对定位 */
+            z-index: 2; /* 确保副标题在背景上面 */
+            color: #003366; /* 设置职位的颜色为深蓝色 */
+        }
 
-.header p {
-    position: relative; /* 文字相对定位 */
-    z-index: 2; /* 确保段落文字在背景上面 */
-    color: #003366; /* 设置地址和邮箱的颜色为深蓝色 */
-    font-weight: bold; /* 地址、邮箱、联系方式加粗 */
-}
+        .header p {
+            position: relative; /* 文字相对定位 */
+            z-index: 2; /* 确保段落文字在背景上面 */
+            color: #003366; /* 设置地址和邮箱的颜色为深蓝色 */
+            font-weight: bold; /* 地址、邮箱、联系方式加粗 */
+        }
 
-.header a {
-    color: #003366; /* 设置邮箱链接的颜色为深蓝色 */
-    text-decoration: none; /* 去掉下划线 */
-    font-weight: bold; /* 邮箱链接加粗 */
-}
+        .header a {
+            color: #003366; /* 设置邮箱链接的颜色为深蓝色 */
+            text-decoration: none; /* 去掉下划线 */
+            font-weight: bold; /* 邮箱链接加粗 */
+        }
 
-.header a:hover {
-    text-decoration: underline; /* 鼠标悬停时添加下划线 */
-}
+        .header a:hover {
+            text-decoration: underline; /* 鼠标悬停时添加下划线 */
+        }
 
         main {
             background-color: white; /* 主体内容背景色 */
@@ -87,39 +88,95 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             margin: 20px; /* 上下左右外边距 */
         }
+
         h2, h3 {
             color: #003366; /* 设置小标题颜色为深蓝色 */
         }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         footer {
             text-align: center;
             margin-top: 20px;
             font-size: 0.9em; /* 页脚字体稍小 */
             color: #777; /* 页脚文字颜色 */
         }
-        @media (max-width: 600px) {
+
+        /* 媒体查询 */
+        @media (max-width: 1200px) {
             .header {
-                padding: 20px; /* 减少内边距 */
+                padding: 30px 15px; /* 减少内边距 */
             }
+
+            main {
+                margin: 20px;
+                padding: 15px;
+            }
+
             .avatar {
-                width: 100px; /* 减小头像宽度 */
+                width: 120px; /* 减小头像宽度 */
+            }
+
+            h2 {
+                font-size: 28px; /* 减小标题字体 */
+            }
+
+            h3 {
+                font-size: 22px; /* 减小副标题字体 */
             }
         }
-        @media print {
-            header, footer {
-                display: none; /* 隐藏页眉和页脚 */
+
+        @media (max-width: 800px) {
+            .header {
+                padding: 20px 10px; /* 进一步减少内边距 */
             }
+
             main {
-                margin: 0; /* 移除外边距 */
+                margin: 10px;
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 24px; /* 减小标题字体 */
+            }
+
+            h3 {
+                font-size: 20px; /* 减小副标题字体 */
+            }
+
+            ul {
+                font-size: 14px; /* 减小列表字体 */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .header {
+                padding: 10px 5px; /* 最小内边距 */
+            }
+
+            main {
+                margin: 5px;
+                padding: 5px;
+            }
+
+            h2 {
+                font-size: 20px; /* 最小标题字体 */
+            }
+
+            h3 {
+                font-size: 18px; /* 最小副标题字体 */
+            }
+
+            ul {
+                font-size: 12px; /* 最小列表字体 */
             }
         }
     </style>
 </head>
 <body>
-
     <div class="header">
         <img src="avatar.jpg" alt="头像：He Yuzhou" class="avatar">
         <h1>He Yuzhou</h1>
@@ -148,7 +205,6 @@
         </p>
     </div>
   
-
     <main style="margin: 80px; padding: 20px; background-color: #f9f9f9;">
         <h2 style="font-family: 'Verdana', sans-serif; font-size: 32px; font-weight: bold; color: #003366; margin-bottom: 10px; border-bottom: 2px solid #003366; padding-bottom: 5px;">Education</h2>
         
@@ -158,7 +214,6 @@
                 Tianjin, China
             </span>
         </h3>
-        
         
         <p style="font-family: 'Verdana', monospace; font-size: 16px; color: #A9A9A9; display: flex; justify-content: space-between;">
             <b style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #A9A9A9; text-transform: uppercase;">B.S. in Mathematics and Applied Mathematics</b>
@@ -182,7 +237,6 @@
             <li style="list-style-type: none;"></li> <!-- 空行不显示小圆点 -->
         </ul>
         
-    
         <h2 style="font-family: 'Verdana', sans-serif; font-size: 32px; font-weight: bold; color: #003366; margin-bottom: 10px; border-bottom: 2px solid #003366; padding-bottom: 5px;">Honors & Awards</h2>
         <h3 style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; margin-bottom: 5px;">International</h3>
         <ul style="font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 1.6; padding-left: 0;">
@@ -195,94 +249,82 @@
                     (View certificate)
                 </a>
             </li>
-            
         </ul>
         
+        <h3 style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; margin-bottom: 5px;">Domestic</h3>
+        <ul style="font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 1.6; padding-left: 0;">
+            <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
+                <strong>2023: Outstanding Winner</strong><span style="color: #888686;">, School Mathematics Contest.</span>
+            </li>
+            <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
+                <strong>2024: Second Prize</strong><span style="color: #888686;">, The Chinese Mathematics Competitions.</span>
+            </li>
+        </ul>
 
-        
+        <h2 style="font-family: 'Verdana', sans-serif; font-size: 32px; font-weight: bold; color: #003366; margin-bottom: 10px; border-bottom: 2px solid #003366; padding-bottom: 5px;">Experience</h2>
 
-<h3 style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; margin-bottom: 5px;">Domestic</h3>
-<ul style="font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 1.6; padding-left: 0;">
-    <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
-        <strong>2023: Outstanding Winner</strong><span style="color: #888686;">, School Mathematics Contest.</span>
-    </li>
-    <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
-        <strong>2024: Second Prize</strong><span style="color: #888686;">, The Chinese Mathematics Competitions.</span>
-    </li>
-</ul>
+        <h3 style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; margin-bottom: 5px; display: flex; justify-content: space-between; align-items: center;">
+            Probability Theory
+            <span style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; font-style: italic;">
+                Tianjin, China
+            </span>
+        </h3>
 
-<h2 style="font-family: 'Verdana', sans-serif; font-size: 32px; font-weight: bold; color: #003366; margin-bottom: 10px; border-bottom: 2px solid #003366; padding-bottom: 5px;">Experience</h2>
+        <p style="font-family: 'Verdana', monospace; font-size: 16px; color: #A9A9A9; display: flex; justify-content: space-between;">
+            <b style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #A9A9A9; text-transform: uppercase;">Teaching Assistant</b>
+            <span style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #003366; font-style: italic;">
+                (Sep. 2024 - Jan. 2025)
+            </span>
+        </p>
 
-<h3 style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; margin-bottom: 5px; display: flex; justify-content: space-between; align-items: center;">
-    Probability Theory
-    <span style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; font-style: italic;">
-        Tianjin, China
-    </span>
-</h3>
+        <ul style="font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 1.6; padding-left: 0;">
+            <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
+                Graded homework and provided academic tutoring.
+            </li>
+        </ul>
 
-<p style="font-family: 'Verdana', monospace; font-size: 16px; color: #A9A9A9; display: flex; justify-content: space-between;">
-    <b style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #A9A9A9; text-transform: uppercase;">Teaching Assistant</b>
-    <span style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #003366; font-style: italic;">
-        (Sep. 2024 - Jan. 2025)
-    </span>
-</p>
+        <h2 style="font-family: 'Verdana', sans-serif; font-size: 32px; font-weight: bold; color: #003366; margin-bottom: 10px; border-bottom: 2px solid #003366; padding-bottom: 5px;">Experience</h2>
 
-<ul style="font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 1.6; padding-left: 0;">
-    <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
-        Graded homework and provided academic tutoring.
-    </li>
-</ul>
+        <h3 style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; margin-bottom: 5px; display: flex; justify-content: space-between; align-items: center;">
+            Tianjin University Mathematics Guide Website
+            <span style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; font-style: italic;">
+                Tianjin, China
+            </span>
+        </h3>
 
+        <p style="font-family: 'Verdana', monospace; font-size: 16px; color: #A9A9A9; display: flex; justify-content: space-between;">
+            <b style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #A9A9A9; text-transform: uppercase;">Website Developer</b>
+            <span style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #003366; font-style: italic;">
+                (Jun. 2023 - Present)
+            </span>
+        </p>
 
-<h2 style="font-family: 'Verdana', sans-serif; font-size: 32px; font-weight: bold; color: #003366; margin-bottom: 10px; border-bottom: 2px solid #003366; padding-bottom: 5px;">Experience</h2>
+        <ul style="font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 1.6; padding-left: 0;">
+            <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
+                Responsible for Number Theory and Mathematical Analysis.
+                <a href="https://jiyouhai.github.io/tju-math-guide/foreword/" target="_blank" style="font-family: 'Verdana', sans-serif; font-size: 20px; color: #003366; text-decoration: underline; margin-bottom: 10px; display: inline-block;">(click here to view)</a>
+            </li>
+            <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
+                Achieved 49,000 event counts and 11,000 views, serving over 100 undergraduate students annually.
+            </li>
+        </ul>
 
-<h3 style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; margin-bottom: 5px; display: flex; justify-content: space-between; align-items: center;">
-    Tianjin University Mathematics Guide Website
-    <span style="font-family: 'Verdana', serif; font-size: 24px; color: #00509e; font-style: italic;">
-        Tianjin, China
-    </span>
-</h3>
-
-<p style="font-family: 'Verdana', monospace; font-size: 16px; color: #A9A9A9; display: flex; justify-content: space-between;">
-    <b style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #A9A9A9; text-transform: uppercase;">Website Developer</b>
-    <span style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #003366; font-style: italic;">
-        (Jun. 2023 - Present)
-    </span>
-</p>
-
-
-<ul style="font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 1.6; padding-left: 0;">
-    <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
-        Responsible for Number Theory and Mathematical Analysis.
-        <a href="https://jiyouhai.github.io/tju-math-guide/foreword/" target="_blank" style="font-family: 'Verdana', sans-serif; font-size: 20px; color: #003366; text-decoration: underline; margin-bottom: 10px; display: inline-block;">(click here to view)</a>
-    </li>
-    <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
-        Achieved 49,000 event counts and 11,000 views, serving over 100 undergraduate students annually.
-    </li>
-</ul>
-
-    
-<h2 style="font-family: 'Arial', sans-serif; font-size: 32px; font-weight: bold; color: #003366; margin-bottom: 10px; border-bottom: 2px solid #003366; padding-bottom: 5px;">Self-study</h2>
-<h3 style="font-family: 'Verdana', serif; font-size: 20px; color: #00509e; margin-bottom: 5px;">
-    A Basic Course in Algebraic Topology
-</h3>
-<p style="font-family: 'Verdana', monospace; font-size: 16px; color: #A9A9A9; display: flex; justify-content: space-between;">
-    <b style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #A9A9A9; text-transform: uppercase;"> By William S. Massey</b>
-    </span>
-</p>
-<ul style="font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 1.6; padding-left: 0;">
-    <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
-        Published a column on Zhihu, a Q&A site and news aggregator.
-    </li>
-</ul>
-
-
+        <h2 style="font-family: 'Arial', sans-serif; font-size: 32px; font-weight: bold; color: #003366; margin-bottom: 10px; border-bottom: 2px solid #003366; padding-bottom: 5px;">Self-study</h2>
+        <h3 style="font-family: 'Verdana', serif; font-size: 20px; color: #00509e; margin-bottom: 5px;">
+            A Basic Course in Algebraic Topology
+        </h3>
+        <p style="font-family: 'Verdana', monospace; font-size: 16px; color: #A9A9A9; display: flex; justify-content: space-between;">
+            <b style="font-family: 'Verdana', sans-serif; font-size: 16px; color: #A9A9A9; text-transform: uppercase;"> By William S. Massey</b>
+        </p>
+        <ul style="font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 1.6; padding-left: 0;">
+            <li style="list-style-type: disc; margin-left: 30px; font-size: 20px; padding-left: 10px;">
+                Published a column on Zhihu, a Q&A site and news aggregator.
+            </li>
+        </ul>
     </main>
-    
 
-<footer>
-    <p>&copy; 2024 He Yuzhou. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 He Yuzhou. All rights reserved.</p>
+    </footer>
 </body>
 </html>
